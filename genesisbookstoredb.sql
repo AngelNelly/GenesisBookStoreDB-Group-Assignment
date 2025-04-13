@@ -21,11 +21,27 @@ CREATE TABLE Books (
 INSERT INTO Authors (Name, Bio) VALUES
 ('J.K. Rowling', 'Author of Harry Potter'),
 ('George Orwell', 'Author of 1984');
+('Ngũgĩ wa Thiong’o', 'Kenyan writer and academic'),
+('Chinua Achebe', 'Author of Things Fall Apart');
 
 
 INSERT INTO Books (Title, Genre, Price, AuthorID) VALUES
 ('Harry Potter', 'Fantasy', 29.99, 1),
 ('1984', 'Dystopian', 19.99, 2);
+('Petals of Blood', 'Political Fiction', 24.99, 3, 1977),
+('Things Fall Apart', 'Classic', 21.50, 4, 1958);
+
+CREATE TABLE Customers (
+    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(100),
+    Email VARCHAR(100)
+);
+
+-- Insert customers
+INSERT INTO Customers (FullName, Email) VALUES
+('Faith Wanjiku', 'faith@example.com'),
+('James Kariuki', 'james@example.com');
+
 
 
 
